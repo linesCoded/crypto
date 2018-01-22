@@ -1,0 +1,27 @@
+{
+    "algo": "cryptonight-lite",  // cryptonight (default) or cryptonight-lite
+    "av": 0,                // algorithm variation, 0 auto select
+    "background": false,    // true to run the miner in the background
+    "colors": true,         // false to disable colored output    
+    "cpu-affinity": "0x3",   // set process affinity to CPU core(s), mask "0x3" for cores 0 and 1
+    "cpu-priority": 5,   // set process priority (0 idle, 2 normal to 5 highest)
+    "donate-level": 1,      // donate level, mininum 1%
+    "log-file": null,       // log all output to a file, example: "c:/some/path/xmrig.log"
+    "max-cpu-usage": 99,    // maximum CPU usage for automatic mode, usually limiting factor is CPU cache not this option.  
+    "print-time": 60,       // print hashrate report every N seconds
+    "retries": 5,           // number of times to retry before switch to backup server
+    "retry-pause": 5,       // time to pause between retries
+    "safe": false,          // true to safe adjust threads and av settings for current CPU
+    "syslog": false,        // use system log for output messages
+    "threads": null,        // number of miner threads
+    "pools": [
+        {
+            "url": "pool.aeon.hashvault.pro:3333", // URL of mining server
+            "user": "WmsDr32gDT38TDbB4K4dePWWcx66jjPywgFUHmdTERQJTYZ998tZse1AL5cHgnKz4kbU4TiiTuWWpHuVnRzFz8hK2s9wwgKLH",                        // username for mining server
+            "pass": "x:l.33@web.de",                       // password for mining server
+            "keepalive": true,                 // send keepalived for prevent timeout (need pool support)
+            "nicehash": false                  // enable nicehash/xmrig-proxy support
+        }
+    ]
+    
+}
